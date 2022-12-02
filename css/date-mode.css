@@ -1,0 +1,64 @@
+.date-box {
+  width: 45px;
+  height: 25px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-box .date-input {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+
+.toggle-date {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 100%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.toggle-date:before {
+  height: 21px;
+  width: 21px;
+  background-color: #8f8f8f;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  content: "";
+  transition: all 0.4s ease-in-out;
+}
+
+.date-input {
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.date-input:checked + .toggle-date {
+  background-color: #5298fa;
+}
+
+.date-input:focus + .toggle-date {
+  box-shadow: 0px 0px 1px rgb(44, 43, 43);
+}
+
+.date-input:checked + .toggle-date:before {
+  background-color: #ffffff;
+  left: 22px;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-date.round {
+  border-radius: 20px;
+}
+
+.toggle-date.round:before {
+  border-radius: 100%;
+}

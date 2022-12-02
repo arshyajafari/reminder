@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reminder</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./css/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/display.css" />
+    <link rel="stylesheet" href="./css/clock.css" />
+    <link rel="stylesheet" href="./css/mode.css" />
+    <link rel="stylesheet" href="./css/insert.css" />
+    <link rel="stylesheet" href="./css/date-mode.css" />
+    <link rel="stylesheet" href="./css/calendar.css" />
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid w-50">
+      <div class="row m-4 clock">
+        <div class="hour"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+        <div class="center"></div>
+        <div class="date"></div>
+      </div>
+      <div class="row p-3">
+        <h4 class="font-weight-bold m-auto">Reminder</h4>
+      </div>
+      <div class="row m-auto">
+        <label class="mode mt-4 mb-4">
+          <input type="checkbox" class="switch-btn" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="row m-auto">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control remind-input"
+            placeholder="What reminder"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary fa fa-plus add-elements"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <div class="row m-auto">
+        <ul class="list"></ul>
+      </div>
+      <div class="datepicker"></div>
+    </div>
+
+    <script src="./js/mode.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/insert.js"></script>
+    <script src="./js/calendar.js"></script>
+  </body>
+</html>
